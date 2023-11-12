@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Get Volume
+get_vol() {
+	VOL=`pamixer --get-volume`
+	if [[ -z "$VOL" ]]; then
+		echo "0"
+	else
+		echo "$VOL"
+	fi	
+}

@@ -1,0 +1,43 @@
+#----------------------------------------------------#
+#			NFS			     #
+#----------------------------------------------------#
+
+#		ON SERVER
+pacman -S nfs-utils
+
+systemctl enable nfs-server.service
+systemctl start nfs-server.service
+systemctl status nfs-server.service
+
+mkdir -p /srv/nfs/<Share> # Actual share <data> is linked into folder
+mount --bind /path/to/<data> /srv/nfs/<share>
+
+vim /etc/exports
+# /path/to/<data>	192.168.x.x(sync,rw)
+
+exportfs -arv
+exportfs -s
+
+# start (and enable) if nedded
+iptables -A INPUT -p tcp --dport 111 -j ACCEPT
+iptables -A INPUT -p udp --dport 111 -j ACCEPT
+iptables -A INPUT -p tcp --dport 2049 -j ACCEPT
+iptables -A INPUT -p udp --dport 2049 -j ACCEPT
+
+#----------------------------------------------------#
+		Client
+#----------------------------------------------------#
+
+pacman -S nfs-utils
+
+systemctl enable nfs-server.service
+systemctl start nfs-server.service
+systemctl status nfs-server.service
+
+showmount -e 192.168.x.x
+
+mkdir -p ~/mnt/<Share>
+mount -t nfs -o vers=4 192.168.srv.ip:/path/to/<share> ~/mnt/<share>
+
+#----------------------------------------------------#
+make fstab work!

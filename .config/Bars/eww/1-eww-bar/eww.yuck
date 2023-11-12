@@ -1,0 +1,83 @@
+;;  _____ _           ____                     _   _ _        _       
+;; |_   _| |__   ___ / ___| __ _ ___ ___ _   _| \ | (_)_ __  (_) __ _ 
+;;   | | | '_ \ / _ \ |  _ / _` / __/ __| | | |  \| | | '_ \ | |/ _` |
+;;   | | | | | |  __/ |_| | (_| \__ \__ \ |_| | |\  | | | | || | (_| |
+;;   |_| |_| |_|\___|\____|\__,_|___/___/\__, |_| \_|_|_| |_|/ |\__,_|
+;;                                       |___/             |__/       
+;;   Spawned: Wed Jan 25 2023 - 03:46
+;;  Last Mod: Sat Oct 28 2023 - 03:25
+;;  Config: Eww Media Player
+;;  Depends: {eww scss scripts}  (Pulse/Pipe) pactl
+;;  Note: 
+;;
+
+;; ** Variables ***********************************************************************
+
+;; Volume vars
+(defpoll VOLUME :interval "1s" "pactl get-sink-volume @DEFAULT_SINK@ | awk '{printf $5}' | cut -d '%' -f 1")
+
+(defvar time-visible false)   ; for :run-while property of below variable
+                              ; when this turns true, the polling starts and
+                              ; var gets updated with given interval
+
+(defpoll time :interval "1s"
+              :initial "initial-value"  ; optional, defaults to poll at startup
+              :run-while time-visible   ; optional, defaults to 'true'
+  `date +%H:%M:%S`)
+
+
+;; ** Windows *************************************************************************
+
+(defwindow volume
+           :monitor 0
+           :geometry (geometry :x "760px"
+                               :y "5px"
+                               :width "400px"
+                               :height "30px"
+                               :anchor "top left")
+           :stacking "fg"
+           :windowtype "dock"
+           :wm-ignore false
+(volume))
+
+(defwindow time
+           :monitor 0
+           :geometry (geometry :x "1500px"
+                               :y "5px"
+                               :width "400px"
+                               :height "30px"
+                               :anchor "top left")
+           :stacking "fg"
+           :windowtype "dock"
+           :wm-ignore false
+(volume))
+
+;; ** Widgets *************************************************************************
+
+
+
+(defwidget volume []
+                      (box :class "volume"
+		        (box :class "music_bar" 
+                             :halign "center" 
+                             :vexpand "false" 
+                             :hexpand "false" 
+			     :orientation "v"
+                                (scale :onchange "pactl set-sink-volume @DEFAULT_SINK@ {}%" 
+                                       :min 0 
+                                       :active "true" 
+                                       :max 100 
+                                       :value VOLUME))))
+
+(defwidget time []
+                      (box :class "time"
+		        (box :class "time" 
+                             :halign "center" 
+                             :vexpand "false" 
+                             :hexpand "false" 
+			     :orientation "v"
+                                       :value time)))
+
+
+
+

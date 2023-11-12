@@ -1,0 +1,65 @@
+
+# Colors (Optic-Green)
+colors:
+  primary:
+    background: '#000000'
+    foreground: '#9dd44f'
+
+  cursor:
+    text: '#000000'
+    cursor: '#a9a6a6'
+
+  vi_mode_cursor:
+    text: '#000000'
+    cursor: '#a9a6a6'
+
+  search:
+    matches:
+      foreground: '#000000'
+      background: '#1AE642'
+    focused_match:
+      foreground: '#000000'
+      background: '#a9a6a6'
+
+  hints:
+    start:
+      foreground: '#1d1f21'
+      background: '#1AE642'
+
+    end:
+      foreground: '#1AE642'
+      background: '#1d1f21'
+
+  line_indicator:
+    foreground: '#9dd44f'
+    background: '#1d1f21'
+
+  footer_bar:
+    background: '#731d8b'
+    foreground: '#ffffff'
+
+  selection:
+    text: '#000000'
+    background: '#1AE642'
+
+  # Normal colors
+  normal:
+    black:   '#000000'
+    red:     '#f77272'
+    green:   '#9dd44f'
+    yellow:  '#1AE642'
+    blue:    '#f97e3b'
+    magenta: '#ff66ff'
+    cyan:    '#87CEFA'
+    white:   '#dbdbd9'
+  
+  # Bright colors
+  bright:
+    black:   '#ffffff'
+    red:     '#f77272'
+    green:   '#9dd44f'
+    yellow:  '#1AE642'
+    blue:    '#68FDFE'
+    magenta: '#ff66ff'
+    cyan:    '#68FDFE'
+    white:   '#dbdbd9'

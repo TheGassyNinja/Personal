@@ -1,0 +1,169 @@
+##├── bars
+##│   ├── eww
+##│   ├── eww-media.sh
+##│   ├── lyrics-test.sh
+##│   ├── my_i3status.sh
+##│   ├── playerctl-test.sh
+##│   └── toggle-eww.sh
+  ├── check-updates.sh
+##├── color.sh
+##├── cpu-precent.sh
+##├── crons
+##│   ├── check-updates.sh
+##│   ├── cpu-precent.sh
+##│   ├── dbus.sh
+##│   └── mpc_status.sh
+##├── dbus.sh
+##├── eww
+##├── eww_
+##├── eww-media.sh
+##├── Gif-themes.sh
+##├── Hotkeys.sh
+##├── in-terms
+##├── JunkDrawer
+##│   ├── check-updates.sh
+##│   ├── color.sh
+##│   ├── cpu-precent.sh
+##│   ├── dbus.sh
+##│   ├── eww
+##│   ├── eww_
+##│   ├── eww-media.sh
+##│   ├── Gif-themes.sh
+##│   ├── Hotkeys.sh
+##│   ├── kjv
+##│   ├── lyrics-test.sh
+##│   ├── mpc_status.sh
+##│   ├── my_i3status.sh
+##│   ├── notify-test.sh
+##│   ├── playerctl-test.sh
+##│   ├── Power.sh
+##│   ├── pywal-switcher.sh
+##│   ├── rofi-power-menu
+##│   ├── Scripts
+##│   │   ├── 10
+##│   │   ├── chatgpt.txt
+##│   │   ├── Configs-Ed.sh
+##│   │   ├── Easy-Eq.sh
+##│   │   ├── Fun
+##│   │   │   └── R2.sh
+##│   │   ├── fzf-testing.sh
+##│   │   ├── MPD.sh
+##│   │   ├── My-Scripts.sh
+##│   │   ├── now-play.sh
+##│   │   ├── README.org
+##│   │   ├── Rofi-Main.sh
+##│   │   ├── rofi-power.sh
+##│   │   ├── SCRIPTS.org
+##│   │   ├── SCRN-Cap.sh
+##│   │   ├── Sounds
+##│   │   │   ├── oh-hell-no.mp3
+##│   │   │   └── R2-Sounds
+##│   │   │       ├── Building Freak Out.mp3
+##│   │   │       ├── Curt Reply.mp3
+##│   │   │       ├── Happy Confirmation.mp3
+##│   │   │       ├── Happy ThreeChirp.mp3
+##│   │   │       ├── Lonely Hello.mp3
+##│   │   │       ├── Lonely singing.mp3
+##│   │   │       ├── Pulling it Together.mp3
+##│   │   │       ├── Short Raspberry.mp3
+##│   │   │       ├── Sing Song Response.mp3
+##│   │   │       ├── Startled Whoop.mp3
+##│   │   │       ├── Stifled Laugh.mp3
+##│   │   │       ├── Testy Blowup(1).mp3
+##│   │   │       ├── Testy Blowup.mp3
+##│   │   │       ├── Unconvinced Grumbling.mp3
+##│   │   │       ├── Upset TwoTone.mp3
+##│   │   │       └── WEEEOOOOWW.mp3
+##│   │   ├── Startup
+##│   │   │   ├── BSPWM-startup.sh
+##│   │   │   ├── DWM-startup.sh
+##│   │   │   └── layout1.sh
+##│   │   ├── Themes
+##│   │   │   ├── conky-sel.sh
+##│   │   │   ├── Gif-themes.sh
+##│   │   │   ├── pywal-switcher.sh
+##│   │   │   └── wal-theme.sh
+##│   │   └── Utils
+##│   │       ├── adapter.sh
+##│   │       ├── Backup-git
+##│   │       ├── clipmenu.sh
+##│   │       ├── display.sh
+##│   │       └── myfi.sh
+##│   ├── songinfo
+##│   ├── songLyrics
+##│   ├── ssh-test.sh
+##│   ├── tldr.sh
+##│   ├── toggle-eww.sh
+##│   ├── wall-test.sh
+##│   └── wal-theme.sh
+##├── kjv
+##├── la.txt
+##├── ls.txt
+##├── lyrics-test.sh
+##├── menus
+##├── mpc_status.sh
+##├── my_i3status.sh
+##├── notify-test.sh
+##├── playerctl-test.sh
+##├── Power.sh
+##├── pywal-switcher.sh
+##├── rofi-power-menu
+##├── Scripts
+##│   ├── 10
+##│   ├── chatgpt.txt
+##│   ├── Configs-Ed.sh
+##│   ├── Easy-Eq.sh
+##│   ├── Fun
+##│   │   └── R2.sh
+##│   ├── fzf-testing.sh
+##│   ├── MPD.sh
+##│   ├── My-Scripts.sh
+##│   ├── now-play.sh
+##│   ├── README.org
+##│   ├── Rofi-Main.sh
+##│   ├── rofi-power.sh
+##│   ├── SCRIPTS.org
+##│   ├── SCRN-Cap.sh
+##│   ├── Sounds
+##│   │   ├── oh-hell-no.mp3
+##│   │   └── R2-Sounds
+##│   │       ├── Building Freak Out.mp3
+##│   │       ├── Curt Reply.mp3
+##│   │       ├── Happy Confirmation.mp3
+##│   │       ├── Happy ThreeChirp.mp3
+##│   │       ├── Lonely Hello.mp3
+##│   │       ├── Lonely singing.mp3
+##│   │       ├── Pulling it Together.mp3
+##│   │       ├── Short Raspberry.mp3
+##│   │       ├── Sing Song Response.mp3
+##│   │       ├── Startled Whoop.mp3
+##│   │       ├── Stifled Laugh.mp3
+##│   │       ├── Testy Blowup(1).mp3
+##│   │       ├── Testy Blowup.mp3
+##│   │       ├── Unconvinced Grumbling.mp3
+##│   │       ├── Upset TwoTone.mp3
+##│   │       └── WEEEOOOOWW.mp3
+##│   ├── Startup
+##│   │   ├── BSPWM-startup.sh
+##│   │   ├── DWM-startup.sh
+##│   │   └── layout1.sh
+##│   ├── Themes
+##│   │   ├── conky-sel.sh
+##│   │   ├── Gif-themes.sh
+##│   │   ├── pywal-switcher.sh
+##│   │   └── wal-theme.sh
+##│   └── Utils
+##│       ├── adapter.sh
+##│       ├── Backup-git
+##│       ├── clipmenu.sh
+##│       ├── display.sh
+##│       └── myfi.sh
+##├── songinfo
+##├── songLyrics
+##├── ssh-test.sh
+##├── tldr.sh
+##├── toggle-eww.sh
+##├── wall-test.sh
+##└── wal-theme.sh
+#
+20 directories, 148 files

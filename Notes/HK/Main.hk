@@ -1,0 +1,116 @@
+#
+#		    >>> Window Nav <<<
+#		c = Create new window
+#		p = Previous window
+#		n = Next window
+#		w = Window preview
+#		d = Detach from session
+#		, = Rename Current window
+#		& = Close Current window
+#
+#		    >>> Pane  Nav <<<
+#		% = H Split
+#		" = V Split
+#		{ = Move Current pane Left
+#		} = Move Current pane Right    	
+#		z = Zoom Pane (Toggle)
+#	      DIR = Switch to Pane DIR
+#
+#----------------------------------------------------#
+#		    >>>  Aliases  <<<
+#
+#	  alias nmux='tmux new -s Work'
+#  	  alias amux='tmux a'
+#  	  alias dmux='tmux detach'	
+#
+#----------------------------------------------------#
+#		   >>> CONFIG  FILES  <<<
+#	~/.tmux.conf 			# Main Config	
+#	~/.tmux/plugins			# Plugins
+#	~/.tmux/plugins/tmux-themepack	# Themes
+#
+#----------------------------------------------------#
+#		   >>>  Links  <<<
+#	http://tmuxcheatsheet.com
+#	http://google.com
+#
+#
+#
+#
+#
+#----------------------------------------------------#
+#----------------------------------------------------#
+#---------------------->>>  VIM   <<<----------------#
+
+#		   >>>  Hot Keys <<<
+#	Leader= CTRL+, 		#Set in rc
+#
+#		    >>> Movement  <<<
+#	 k	    up
+#	h l	Left  Right
+#	 j	   Down
+#
+#		<Home> = Start of line
+#		<End>  = End of line
+#	     	H = Top of screen
+#	     	M = Mid of screen	
+#	     	L = Bott of screen
+#
+#
+#----------------------------------------------------#
+#		    >>>  Aliases  <<<
+#
+#
+#
+#
+#
+#
+#
+#
+#----------------------------------------------------#
+#		   >>> CONFIG  FILES  <<<
+#	~/.vimrc		# Main Config
+#	~/vim/plugins		# Plugins
+#	~/vim/theme		# Themes
+#
+#
+#
+#----------------------------------------------------#
+#		   >>>  Links  <<<
+#		http://google.com
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#----------------------------------------------------#
+#		>>> background <<<
+#	#xlocker
+#	#blurlock
+#	#
+#
+#
+#
+#
+#----------------------------------------------------#
+#----------------------------------------------------#
+#		>>> BIN <<<
+# # inxi
+# # grep
+# # cut
+# # cat
+# #  
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#

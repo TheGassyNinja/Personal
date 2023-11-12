@@ -1,0 +1,11 @@
+#----------------------------------------------------#
+	#		TO Do
+#----------------------------------------------------#
+# Learn vim record movement
+# change BASH PS1
+# Write nfs steps (Script?)
+# nerdtree onbottom and set closed on start?
+# yakauke clipboard?
+#
+#
+#

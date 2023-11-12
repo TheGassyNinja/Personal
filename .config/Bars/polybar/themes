@@ -1,0 +1,32 @@
+
+################
+#   GoldenGas  #
+################
+
+[colors]
+background = #aa282a36
+background-alt = #373B41
+foreground = #
+primary = #bd93f9
+secondary = #8be9fd
+alert = #A54242
+disabled = #707880
+
+#
+
+################
+#  OpTicGas    #
+################
+
+[colors]
+background = #aa282a36
+background-alt = #373B41
+foreground = #7CFC00
+primary = #bd93f9
+secondary = #8be9fd
+alert = #A54242
+disabled = #707880
+
+#
+
+#################

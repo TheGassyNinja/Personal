@@ -1,0 +1,85 @@
+######################################################
+#		>>> I use Arch BTW <<<		     #
+######################################################
+# 	First psackages to install
+#  openssh	vim	 tmux	  firefox	
+#  alacritty	git	 vivid	  exa
+#  fish		mc	 inxi	  lshw
+#  picom	polybar	 nitrogen rofi
+#  python	vlc	 mpg123	  figlet
+#  lolcat	neofetch 
+#
+#
+#
+#
+######################################################
+#						     #
+######################################################
+# Screen blanking
+# xset s off -dpms
+#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#
+#
+#
+#
+#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

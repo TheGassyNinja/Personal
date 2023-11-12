@@ -1,0 +1,58 @@
+c='clear'
+cl='clear && neofetch --config ~/.config/neofetch/colorsonly.conf && la'
+cb='neofetch --config ~/.config/neofetch/colorsonly.conf'
+
+ls='cb && exa -al --color=always --group-directories-first --icons' # preferred listing
+la='exa -a --color=always --group-directories-first --icons'  # all files and dirs
+ll='exa -l --color=always --group-directories-first --icons'  # long format
+lt='exa -aT --color=always --group-directories-first --icons' # tree listing
+l.="exa -a | egrep '^\.'"                                     # show only dotfiles
+
+ip="ip -color"
+grep='grep --color=auto'
+
+br='source ~/.bashrc'
+
+pac='sudo pacman -S'
+pac-rm='sudo pacman -Rs'
+pac-srch='sudo pacman -Ss'
+pac-info='sudo pacman -Qi'
+update='sudo pacman -Syu && echo "0" > ~/.local/tmp/UPDATES.txt'
+rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -500 | nl > ~/rip.txt"
+
+~='cd $HOME'
+Scripts='cd $HOME/Scripts/'
+Downloads='cd $HOME/Downloads'
+Music='cd $HOME/Music'
+
+Weather='notify-send "$(inxi -xxx -W 76226)"'
+status='~/.local/bin/in-terms/stats.sh'
+
+jctl="journalctl -p 3 -xb"
+
+vup='pactl set-sink-volume 0 +10%'
+vdn='pactl set-sink-volume 0 -10%'
+
+MNT-NFS="sudo mount -t nfs -o vers=4 192.168.254.169:/srv/nfs/DataT ~/mnt/DataT"
+MNT-JEN="sudo mount -t nfs -o vers=4 192.168.254.169:/srv/nfs/Jenny ~/mnt/Jenny"
+
+cac='cava -p ~/.config/cava/config'
+cal='cava -p ~/.config/cava/left-config'
+car='cava -p ~/.config/cava/right-config'
+
+Rtldr='$HOME/tl-test.sh'
+
+net-speed='cat ~/.local/tmp/NETSPEED.txt'
+
+sl='spotify_player like'
+sp='playerctl --player=spotify_player play-pause'
+NP='cmd-playerctl'
+
+AT='$HOME/.config/alacritty/Scripts/theme.sh'
+
+chx='chmod +x'
+
+FS='$HOME/.local/bin/in-terms/fzf/power-fzf.sh'
+PW='$HOME/.local/bin/in-terms/fzf/feh-fzf.sh'
+FW='$HOME/.local/bin/Fave-Feh.sh'
+RW='$HOME/.local/bin/crons/Feh-Random.sh'

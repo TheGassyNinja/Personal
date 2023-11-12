@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "$(mpc playlist | grep -A 5 "$(mpc current)" | grep -v "$(mpc current)")"

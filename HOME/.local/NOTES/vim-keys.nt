@@ -1,0 +1,41 @@
+noremap <leader>ac :r ! cat ~/.local/tmp/clip.txt<cr>kdd
+let mapleader = " "
+vnoremap <leader>ah :s/^/#/
+vnoremap <leader>at :s/$/#/
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+"  map copy an paste
+noremap <leader>y "+y
+noremap <leader>p "+p
+noremap <leader>Y "*y
+noremap <leader>P "*p
+noremap <leader>B :enew<CR>
+noremap <leader>b :enew<CR>:NERDTreeFocus<CR>
+noremap <leader>l :bnext<CR>
+noremap <leader>h :bprevious<CR>
+" Useful mappings for managing tabs
+map <leader>tt :tabnew<cr>:NERDTreeFocus<CR>
+map <leader>tn :tabnew<cr>
+map <leader>to :tabonly<cr>
+map <leader>tc :tabclose<cr>
+map <leader>tm :tabmove
+map <leader>t<leader> :tabnext<cr>
+inoremap <F9> <C-O>za
+nnoremap <F9> za
+onoremap <F9> <C-C>za
+vnoremap <F9> zf
+noremap <leader>n :NERDTreeFocus<CR>
+noremap <C-n> :NERDTree<CR>
+noremap <C-t> :NERDTreeToggle<CR>
+noremap <C-f> :NERDTreeFind<CR>
+inoremap ii <Esc>
+noremap <leader>PI :PlugInstall
+noremap <leader>co :ColorToggle
+noremap <leader>T :0r ~/skels/gas-template.txt<CR>:call SpawnMod()<cr>:call LastMod()<cr>
+noremap <leader>D :call SpawnMod()<cr>
+noremap <leader>f :NERDTreeToggle<CR>:FZF<CR>
+noremap <leader>ff :NERDTreeToggle<CR>:FZF!<CR>
+nnoremap <Leader>fn :call OpenFzfForNtFiles()<CR>
+nnoremap <F3> :call TogglePasteMode()<CR>

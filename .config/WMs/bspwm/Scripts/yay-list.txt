@@ -1,0 +1,5 @@
+inxi-git
+tdrop-git
+picom-animations-git
+cava
+lsp-plugins
