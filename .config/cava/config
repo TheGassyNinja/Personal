@@ -131,8 +131,9 @@ channels = stereo
 # ncurses output method and a terminal that can change color definitions such as Gnome-terminal or rxvt.
 # if supported, ncurses mode will be forced on if user defined colors are used.
 # default is to keep current terminal color
-background = '#26233a'
-foreground = '#403d52'
+# PS1  
+background = '#000b1e'
+foreground = '#FA9C06'
 ;foreground = '#15A855'
 
 # SDL only support hex code colors, these are the default:

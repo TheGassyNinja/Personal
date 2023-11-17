@@ -63,11 +63,6 @@ if pgrep easyeffects > /dev/null; then
 	  easyeffects --gapplication-service &
 fi
 
-if pgrep nitrogen > /dev/null; then 
-	pkill nitrogen && nitrogen -restore &
-      else
-	 nitrogen --restore &
-fi  
 
 if pgrep picom > /dev/null; then 
 	pkill picom && sleep 1 && picom &
@@ -76,17 +71,23 @@ if pgrep picom > /dev/null; then
 fi  
 
 ~/.fehbg &
-$HOME/.local/bin/crons/Feh-Random.sh &
 
 touch $HOME/.dbus/Xdbus
 chmod 600 $HOME/.dbus/Xdbus
 env | grep DBUS_SESSION_BUS_ADDRESS > $HOME/.dbus/Xdbus
 echo 'export DBUS_SESSION_BUS_ADDRESS' >> $HOME/.dbus/Xdbus
 
+if which dbus-update-activation-environment >/dev/null 2>&1; then
+        dbus-update-activation-environment DISPLAY XAUTHORITY
+fi
+systemctl --user import-environment DISPLAY XAUTHORITY
+
+playerctld daemon
+# ~/.local/bin/crons/spot.now.listen.sh &
 
 #exec awesome
-#exec bspwm
-exec dwm
+exec bspwm
+#exec dwm
 #exec sway
 
 

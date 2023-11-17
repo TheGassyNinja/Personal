@@ -5,7 +5,7 @@
 #   |_| |_| |_|\___|\____|\__,_|___/___/\__, |_| \_|_|_| |_|/ |\__,_|
 #                                       |___/             |__/       
 #   Spawned: Sat Jan 21 2023 - 11:41
-#  Last Mod: Sat Nov 11 2023 - 04:31
+#  Last Mod: Thu Nov 16 2023 - 20:51
 #  Config: Bash Aliases
 #  Depends: Neofetch (Dir) - exa - expac - inxi - dunst - cava (Dir) - nfs 
 # 
@@ -55,10 +55,6 @@ alias MNT-JEN="sudo mount -t nfs -o vers=4 192.168.254.169:/srv/nfs/Jenny ~/mnt/
 alias cac='cava -p ~/.config/cava/config'
 alias cal='cava -p ~/.config/cava/left-config'
 alias car='cava -p ~/.config/cava/right-config'
-alias Rtldr='$HOME/tl-test.sh'
-
-#sys info
-alias net-speed='cat ~/.local/tmp/NETSPEED.txt'
 
 # Spotify_Player things
 alias NP='cmd-playerctl'
@@ -84,7 +80,6 @@ alias RW='$HOME/.local/bin/crons/Feh-Random.sh'
 
 # FZF demnu
 alias menu='$(compgen -c | sort -u | fzf | xargs which &)'
-
 
 
 
